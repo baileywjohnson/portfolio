@@ -1,6 +1,12 @@
 function NavMenu() {
     return (
-        <h3>NavMenu</h3>
+        <div className="NavMenu">
+            <p>About Me</p>
+            <p>Projects</p>
+            <p>Resume</p>
+            <p>Blog</p>
+            <p>Other</p>
+        </div>
     )
 }
 

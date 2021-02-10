@@ -5,12 +5,7 @@ import Other from './Other'
 
 function Display() {
     return (
-        <div>
-            <About />
-            <Projects />
-            <Blog />
-            <Other />
-        </div>
+        <About />
     )
 }
 

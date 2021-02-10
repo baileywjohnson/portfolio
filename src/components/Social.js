@@ -1,6 +1,13 @@
+import './Social.css'
+
 function Social() {
     return (
-        <h3>Social</h3>
+        <div className="Social">
+            <p class="flexItem">Github</p>
+            <p class="flexItem">LinkedIn</p>
+            <p class="flexItem">Twitter</p>
+            <p class="flexItem">Mail</p>
+        </div>
     )
 }
 

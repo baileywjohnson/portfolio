@@ -1,6 +1,12 @@
 function Profile() {
     return (
-        <h3>Profile</h3>
+        <div className="Profile">
+            <img alt="Photograph"/>
+            <div>
+                <p>Name</p>
+                <p>Title</p>
+            </div>
+        </div>
     )
 }
 
