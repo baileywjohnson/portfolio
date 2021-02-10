@@ -1,5 +1,7 @@
 import {Route, BrowserRouter as Router} from 'react-router-dom'
 
+import {useState} from 'react'
+
 import Navigation from './components/Navigation'
 
 import About from './components/About'
@@ -13,20 +15,22 @@ const reload = () => window.location.reload();
 
 function App() {
 
+  const [displayed, setDisplayed] = useState('About');
+
   return (
     <Router>
       <div className="App">
-        <div id="navContainer"><Navigation /></div>
+        <div id="navContainer"><Navigation displayed={displayed}/></div>
         <div id="dispContainer">
-          <Route path="/" exact component={About} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/other" component={Other} />
+          <Route path="/" exact render={() => {setDisplayed('About'); return (<About />)}}/>
+          <Route path="/about" render={() => {setDisplayed('About'); return (<About />)}}/>
+          <Route path="/projects" render={() => {setDisplayed('Projects'); return (<Projects />)}} />
+          <Route path="/blog" render={() => {setDisplayed('Blog'); return (<Blog />)}} />
+          <Route path="/other" render={() => {setDisplayed('Other'); return (<Other />)}} />
         </div>
       </div>
       <footer>
-        <p>Created by <a href="https://github.com/baileywjohnson/portfolio" target="_blank">Bailey Johnson</a></p>
+        <p>Created by <a href="https://github.com/baileywjohnson/portfolio" rel="noreferrer" target="_blank">Bailey Johnson</a></p>
       </footer>
       <Route path="/resume.pdf" onEnter={reload} />
     </Router>

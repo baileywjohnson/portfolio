@@ -1,7 +1,12 @@
 .Social{
     display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
 }
 
 .flexItem{
-    width: 25%;
+    width: 33%;
+    color: black;
 }

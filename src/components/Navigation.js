@@ -2,12 +2,12 @@ import Profile from './Profile'
 import Social from './Social'
 import NavMenu from './NavMenu'
 
-function Navigation() {
+function Navigation({displayed}) {
     return (
         <div>
             <Profile />
             <Social />
-            <NavMenu />
+            <NavMenu displayed={displayed}/>
         </div>
     )
 }

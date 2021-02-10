@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 
-function NavMenu() {
+function NavMenu({displayed}) {
+    //Apply Certain Style to "displayed" Content Link
     return (
         <div className="NavMenu">
             <Link to="/about">About Me</Link><br/>

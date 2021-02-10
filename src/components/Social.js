@@ -1,12 +1,12 @@
 import './Social.css'
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 
 function Social() {
     return (
         <div className="Social">
-            <p className="flexItem">Github</p>
-            <p className="flexItem">LinkedIn</p>
-            <p className="flexItem">Twitter</p>
-            <p className="flexItem">Mail</p>
+            <a className="flexItem" href="https://github.com/baileywjohnson" rel="noreferrer" target="_blank"><FaGithubSquare size={30}/></a>
+            <a className="flexItem" href="https://www.linkedin.com/in/baileywjohnson/" rel="noreferrer" target="_blank"><FaLinkedin size={30}/></a>
+            <a className="flexItem" href="https://twitter.com/baileywjohnsonx" rel="noreferrer" target="_blank"><FaTwitterSquare size={30}/></a>
         </div>
     )
 }
