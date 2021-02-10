@@ -3,10 +3,10 @@ import './Social.css'
 function Social() {
     return (
         <div className="Social">
-            <p class="flexItem">Github</p>
-            <p class="flexItem">LinkedIn</p>
-            <p class="flexItem">Twitter</p>
-            <p class="flexItem">Mail</p>
+            <p className="flexItem">Github</p>
+            <p className="flexItem">LinkedIn</p>
+            <p className="flexItem">Twitter</p>
+            <p className="flexItem">Mail</p>
         </div>
     )
 }

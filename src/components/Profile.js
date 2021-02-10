@@ -1,10 +1,12 @@
+import './Profile.css'
+
 function Profile() {
     return (
         <div className="Profile">
-            <img alt="Photograph"/>
+            <img id="headshot" alt="Photograph" src={process.env.PUBLIC_URL + '/headshot.png'} />
             <div>
-                <p>Name</p>
-                <p>Title</p>
+                <p>Bailey Johnson</p>
+                <p>Full-Stack Software Engineer</p>
             </div>
         </div>
     )
