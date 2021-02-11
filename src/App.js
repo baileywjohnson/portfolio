@@ -1,4 +1,4 @@
-import {Route, HashRouter as Router} from 'react-router-dom'
+import {Route, Switch, HashRouter as Router} from 'react-router-dom'
 
 import {useState} from 'react'
 
@@ -8,6 +8,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Blog from './components/Blog'
 import Other from './components/Other'
+import NotFound from './components/NotFound'
 
 import './App.css'
 
@@ -22,11 +23,14 @@ function App() {
       <div className="App">
         <div id="navContainer"><Navigation displayed={displayed}/></div>
         <div id="dispContainer">
-          <Route path="/" exact render={() => {setDisplayed('About'); return (<About />)}}/>
-          <Route path="/about" render={() => {setDisplayed('About'); return (<About />)}}/>
-          <Route path="/projects" render={() => {setDisplayed('Projects'); return (<Projects />)}} />
-          <Route path="/blog" render={() => {setDisplayed('Blog'); return (<Blog />)}} />
-          <Route path="/other" render={() => {setDisplayed('Other'); return (<Other />)}} />
+          <Switch>
+            <Route path="/" exact render={() => {setDisplayed('About'); return (<About />)}}/>
+            <Route path="/about" render={() => {setDisplayed('About'); return (<About />)}}/>
+            <Route path="/projects" render={() => {setDisplayed('Projects'); return (<Projects />)}} />
+            <Route path="/blog" render={() => {setDisplayed('Blog'); return (<Blog />)}} />
+            <Route path="/other" render={() => {setDisplayed('Other'); return (<Other />)}} />
+            <Route render={() => {setDisplayed(''); return (<NotFound />)}} />
+          </Switch>
         </div>
       </div>
       <footer>

@@ -10,10 +10,6 @@ html, body {
     height: 100%;
 }
 
-.loaderGifHide{
-    display: none;
-}
-
 a {
     outline: 0;
 }

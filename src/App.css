@@ -12,11 +12,11 @@
     -webkit-box-shadow: 0 0 5px #000;
         box-shadow: 0 0 5px #000;
 
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-            -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+    -webkit-animation: fadein 1.2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 1.2s; /* Firefox < 16 */
+        -ms-animation: fadein 1.2s; /* Internet Explorer */
+            -o-animation: fadein 1.2s; /* Opera < 12.1 */
+            animation: fadein 1.2s;
 }
 
 footer{
@@ -51,7 +51,7 @@ footer{
     width: 70%;
     padding-left: 1em;
     padding-right: 1.5em;
-    overflow: auto;
+    overflow: scroll;
     background-color: #FFFFFF;
     border-radius: 0px 10px 10px 0px;
 }
