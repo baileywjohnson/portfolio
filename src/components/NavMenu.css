@@ -1,0 +1,31 @@
+.NavMenu {
+    margin-top: 2em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuItem{
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform .15s;
+    border: 2px solid #45b6fe;
+}
+
+.menuItem:hover{
+    transform: scale(1.05);
+}
+
+.menuItemClicked{
+    background-color: #3792cb;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.menuItemLink{
+    text-decoration: none;
+    color: black;
+}

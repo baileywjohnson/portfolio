@@ -30,7 +30,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <p>Created by <a href="https://github.com/baileywjohnson/portfolio" rel="noreferrer" target="_blank">Bailey Johnson</a></p>
+        <p>&#11088; Created by <a id="creatorLink" href="https://github.com/baileywjohnson/portfolio" rel="noreferrer" target="_blank">Bailey Johnson</a></p>
       </footer>
       <Route path="/resume.pdf" onEnter={reload} />
     </Router>
