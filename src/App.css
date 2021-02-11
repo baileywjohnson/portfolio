@@ -1,10 +1,12 @@
 .App {
+    position: relative;
+    top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     padding-top: 0px;
     margin-bottom: 0;
-    width: 68%;
+    width: 60%;
     display: flex;
     height: 90%;
     border-radius: 10px 10px 10px 10px;
@@ -12,14 +14,16 @@
     -webkit-box-shadow: 0 0 5px #000;
         box-shadow: 0 0 5px #000;
 
-    -webkit-animation: fadein 1.2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 1.2s; /* Firefox < 16 */
-        -ms-animation: fadein 1.2s; /* Internet Explorer */
-            -o-animation: fadein 1.2s; /* Opera < 12.1 */
-            animation: fadein 1.2s;
+    -webkit-animation: fadein 1.25s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 1.25s; /* Firefox < 16 */
+        -ms-animation: fadein 1.25s; /* Internet Explorer */
+            -o-animation: fadein 1.25s; /* Opera < 12.1 */
+            animation: fadein 1.25s;
 }
 
 footer{
+    position: relative;
+    top: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;

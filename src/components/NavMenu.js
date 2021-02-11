@@ -27,7 +27,7 @@ function NavMenu({displayed}) {
                 <div className={results[1]}>Projects</div>
             </Link>
             <a href="/resume.pdf" className="menuItemLink" target="_blank">
-                <div className="menuItem">Resume &#11015;</div>
+                <div className="menuItem">Resume</div>
             </a>
             <Link to="/blog" className="menuItemLink">
                 <div className={results[2]}>Blog</div>
