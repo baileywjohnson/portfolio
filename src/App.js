@@ -1,4 +1,4 @@
-import {Route, BrowserRouter as Router} from 'react-router-dom'
+import {Route, HashRouter as Router} from 'react-router-dom'
 
 import {useState} from 'react'
 
