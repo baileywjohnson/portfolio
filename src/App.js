@@ -18,7 +18,7 @@ function App() {
   const [displayed, setDisplayed] = useState('About');
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <div id="navContainer"><Navigation displayed={displayed}/></div>
         <div id="dispContainer">
