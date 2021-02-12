@@ -1,6 +1,6 @@
 .Social{
     display: flex;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
@@ -9,9 +9,24 @@
 .flexItem{
     width: 25%;
     color: black;
-    transition: transform .15s;
 }
 
-.flexItem:hover{
-    transform: scale(1.05);
+.flexItem svg{
+    border-radius: 5px;
 }
+
+.flexItem svg:hover{
+    background-color: white;
+    -webkit-transition: background-color 400ms;
+    -ms-transition: background-color 400ms;
+    transition: background-color 400ms;
+}
+
+/*
+.flexItem:hover{
+    color: black;
+    -webkit-transition: color 500ms;
+    -ms-transition: color 500ms;
+    transition: color 500ms;
+}
+*/
