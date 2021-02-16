@@ -1,0 +1,56 @@
+#MyStack {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#itemList{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#itemTitle{
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.itemTile{
+    width: 7em;
+    margin: auto;
+    text-align: center;
+    background-color: lightgray;
+    padding: 8px;
+    padding-top: 12px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+.displayedItemTile{
+    border-bottom: 2px solid black;
+}
+
+.itemTile:hover{
+    border-bottom: 2px solid black;
+}
+
+#itemIcon{
+    margin: auto;
+}
+
+#itemDescriptionText{
+    margin: 0px;
+}
+
+#itemAlternativesText{
+    margin-bottom: 0px;
+}

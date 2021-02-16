@@ -1,14 +1,14 @@
 import {Route, Switch, HashRouter as Router} from 'react-router-dom'
 
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
-import Navigation from './components/Navigation'
+import Navigation from './components/Sidebar/Navigation'
 
-import About from './components/About'
-import Projects from './components/Projects'
-import Blog from './components/Blog'
-import Other from './components/Other'
-import NotFound from './components/NotFound'
+import About from './components/Content/About'
+import Projects from './components/Content/Projects'
+import Blog from './components/Content/Blog'
+import Other from './components/Content/Other'
+import NotFound from './components/Content/NotFound'
 
 import './App.css'
 
@@ -17,6 +17,10 @@ const reload = () => window.location.reload();
 function App() {
 
   const [displayed, setDisplayed] = useState('About');
+
+  useEffect(() => {
+    document.getElementById('dispContainer').scrollTo(0, 0);
+  }, [displayed]);
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
