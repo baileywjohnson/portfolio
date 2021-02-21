@@ -1,6 +1,6 @@
 .NavMenu {
-    margin-top: 2em;
-    width: 80%;
+    margin-top: 1em;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -8,6 +8,8 @@
 .menuItem{
     padding-top: 0.8em;
     padding-bottom: 0.8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: white;
@@ -37,7 +39,7 @@
 /* Tablet Size */
 @media only screen and (max-width: 1200px) {
     .NavMenu{
-        width: 90%;
+        width: 95%;
         display: flex;
     }
     .menuItemLink{
@@ -45,9 +47,4 @@
         margin-left: 5px;
         margin-right: 5px;
     }
-  }
-
-/* Mobile Size */
-@media only screen and (max-width: 800px) {
-
   }

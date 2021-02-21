@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 
 function Projects() {
 
+    /*
     const projectData = [
         {
             preview: '/portfolio-preview.png',
@@ -14,8 +15,11 @@ function Projects() {
             tags: ['tag2']
         }
     ]
+    */
 
-    const [currentFilters, setCurrentFilters] = useState(['tag3']);
+    const projectData = [];
+
+    const [currentFilters, setCurrentFilters] = useState([]);
     const [displayedProjects, setDisplayedProjects] = useState(projectData);
 
     const handleCloseEvent = (e) => {
