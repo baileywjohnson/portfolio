@@ -21,7 +21,7 @@ function NavMenu({displayed}) {
     return (
         <div className="NavMenu">
             <Link to="/about" className="menuItemLink">
-                <div className={results[0]}>About Me</div>
+                <div className={results[0]}>About</div>
             </Link>
             <Link to="/projects" className="menuItemLink">
                 <div className={results[1]}>Projects</div>

@@ -33,17 +33,34 @@
     margin-top: 5px;
     cursor: pointer;
     border-bottom: 2px solid white;
+    flex-basis: 20%;
 }
 
 .displayedItemTile{
     border-bottom: 2px solid black;
 }
 
+#TypeScript-logo {
+    color: #007ACC;
+}
+
+#React-logo {
+    color: #61DBFB;
+}
+
+#GraphQL-logo {
+    color: #e535ab;
+}
+
+#PostgreSQL-logo {
+    color: #0064a5;
+}
+
 .itemTile:hover{
     border-bottom: 2px solid black;
 }
 
-#itemIcon{
+.itemIcon{
     margin: auto;
 }
 
@@ -54,3 +71,11 @@
 #itemAlternativesText{
     margin-bottom: 0px;
 }
+
+
+/* Mobile Size */
+@media only screen and (max-width: 800px) {
+    .itemTile{
+        flex-basis: 40%;
+    }
+  }

@@ -22,3 +22,17 @@
     margin: auto;
     text-align: center;
 }
+
+/* Tablet Size */
+@media only screen and (max-width: 1200px) {
+    #headshot{
+        width: 15%;
+    }
+  }
+
+/* Mobile Size */
+@media only screen and (max-width: 800px) {
+    #headshot{
+        width: 22%;
+    }
+  }

@@ -33,3 +33,21 @@
     text-decoration: none;
     color: black;
 }
+
+/* Tablet Size */
+@media only screen and (max-width: 1200px) {
+    .NavMenu{
+        width: 90%;
+        display: flex;
+    }
+    .menuItemLink{
+        width: 20%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+  }
+
+/* Mobile Size */
+@media only screen and (max-width: 800px) {
+
+  }

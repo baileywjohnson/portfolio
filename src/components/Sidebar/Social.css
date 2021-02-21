@@ -22,11 +22,16 @@
     transition: background-color 400ms;
 }
 
-/*
-.flexItem:hover{
-    color: black;
-    -webkit-transition: color 500ms;
-    -ms-transition: color 500ms;
-    transition: color 500ms;
-}
-*/
+/* Tablet Size */
+@media only screen and (max-width: 1200px) {
+    .Social{
+        width: 40%;
+    }
+  }
+
+/* Mobile Size */
+@media only screen and (max-width: 800px) {
+    .Social{
+        width: 40%;
+    }
+  }

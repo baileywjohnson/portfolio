@@ -20,11 +20,12 @@ function App() {
 
   useEffect(() => {
     document.getElementById('dispContainer').scrollTo(0, 0);
+    document.getElementById('App').scrollTo(0, 0);
   }, [displayed]);
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div className="App">
+      <div id="App">
         <div id="navContainer"><Navigation displayed={displayed}/></div>
         <div id="dispContainer">
           <Switch>

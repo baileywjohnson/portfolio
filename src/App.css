@@ -1,12 +1,11 @@
-.App {
+#App {
     position: relative;
     top: 20px;
     margin-left: auto;
     margin-right: auto;
-    /*margin-top: 20px;*/
     padding-top: 0px;
     margin-bottom: 0;
-    width: 60%;
+    width: 65%;
     display: flex;
     height: 90%;
     border-radius: 10px 10px 10px 10px;
@@ -89,3 +88,40 @@ footer{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+/* Tablet Size */
+@media only screen and (max-width: 1200px) {
+    #App {
+        width: 80%;
+        display: block;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: white;
+    }
+    #navContainer {
+        width: 101%;
+        border-radius: 0px 0px 0px 0px;
+    }
+    
+    #dispContainer {
+        width: 95%;
+        border-radius: 0px 0px 0px 0px;
+    }
+  }
+
+/* Mobile Size */
+@media only screen and (max-width: 800px) {
+    #App {
+        width: 95%;
+        display: block;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: white;
+    }
+    #navContainer {
+        width: 101%;
+    }
+    #dispContainer {
+        width: 95%;
+    }
+  }

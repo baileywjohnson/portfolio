@@ -7,7 +7,7 @@ function About() {
         <div className="about">
             <h2>Hi &#128075;, I'm Bailey Johnson.</h2>
             <p>I'm a <b>full-stack software engineer</b> at NASA's Johnson Space Center &#128640;. I graduated from Coastal Carolina University (B.S. in Computer Science) in May of 2020 and have since relocated to the Houston-area.</p>
-            <p>I initially built this portfolio to compliment my resume, as somewhere I could showcase my personal projects.  What you're viewing now is the second version (source for the old version <a href="https://github.com/baileywjohnson/portfolio-old" rel="noreferrer" target="_blank">here</a>) which includes my personal blog and is one of the projects I've used to sharpen my React & UI/UX-design skills.</p>
+            <p>I initially built this portfolio to compliment my resume, as somewhere I could showcase my personal projects.  What you're viewing now is the second version (source for the old version <a href="https://github.com/baileywjohnson/portfolio-old" rel="noreferrer" target="_blank">here</a>) which includes my personal blog and is one of the projects I've used to sharpen my React & UI/UX-design skills (this is a mostly-static React app hosted on Github pages).</p>
             <h3>What's On My Stack</h3>
             <p>Below are some of the tools I'm comfortable leveraging to build things that need to be built (in this case, mainly web applications).  While the list is non-exhaustive, it includes some of what I've been learning/using recently. Click on each to read a bit about my experience with the specific technology and about some of the alternatives I've used.</p>
             <div id="stackContainer"><MyStack /></div>
