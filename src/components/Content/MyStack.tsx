@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import { SiReact, SiTypescript, SiGraphql, SiPostgresql } from 'react-icons/si'
 
-function MyStack() {
+function MyStack({updateParent}:any) {
 
     const stackData = [
         {
@@ -35,7 +35,7 @@ function MyStack() {
 
     const [dispTile, setDispTile] = useState(stackData[0]);
 
-    const handleItemClick = (e) => {
+    const handleItemClick = (e:any) => {
         setDispTile(stackData[e.currentTarget.getAttribute('key-data')]);
     }
 
@@ -45,7 +45,7 @@ function MyStack() {
                 {
                     stackData.map((stackItem, i) => {
                         return (
-                            <div key={i} key-data={i} onClick={handleItemClick} class={(stackItem.name === dispTile.name) ? "itemTile displayedItemTile" : "itemTile"}>
+                            <div key={i} key-data={i} onClick={handleItemClick} className={(stackItem.name === dispTile.name) ? "itemTile displayedItemTile" : "itemTile"}>
                                 {stackItem.icon}
                                 <p key-data={i} id="itemTitle"><b>{stackItem.name}</b></p>
                             </div>

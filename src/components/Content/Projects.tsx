@@ -1,8 +1,9 @@
 import './Projects.css'
 
 import { FaGithub, FaExternalLinkAlt, FaExclamationCircle } from 'react-icons/fa'
+import { useEffect } from 'react'
 
-function Projects() {
+function Projects({updateParent}:any) {
 
     const projectData = [
         {
@@ -12,7 +13,7 @@ function Projects() {
             description: "This is the portfolio you're viewing at this very moment. It's a static single-page React app built with the create-react-app toolchain and deployed on Github Pages. It uses all custom-built layouts and components. In the future I'm considering making the switch to Gatsby for speed improvements.",
             viewLive: 'https://baileyjohnson.io',
             viewSource: 'https://github.com/baileywjohnson/portfolio',
-            tags: ['React', 'Vanilla JS']
+            tags: ['React', 'Typescript']
         },
         {
             preview: '/the-wall_preview.png',
@@ -43,6 +44,10 @@ function Projects() {
         }
     ]
 
+    useEffect(() => {
+        updateParent('Projects');
+    });
+
     return (
         <div className='projects'>
             <h2>&#127912;  Projects</h2>
@@ -54,7 +59,7 @@ function Projects() {
                             <div key={i} className="project">
                                 <div className="project-topContent">
                                     <h3 className="project-title">{project.title}</h3>
-                                    <p class="project-description">{project.description}</p>
+                                    <p className="project-description">{project.description}</p>
                                 </div>
                                 <div className="project-bottomContent">
                                     <div className="project-bottomLeftContent">

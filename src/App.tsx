@@ -18,8 +18,8 @@ function App() {
   const [displayed, setDisplayed] = useState('About');
 
   useEffect(() => {
-    document.getElementById('dispContainer').scrollTo(0, 0);
-    document.getElementById('App').scrollTo(0, 0);
+    document.getElementById('dispContainer')!.scrollTo(0, 0)
+    document.getElementById('App')!.scrollTo(0, 0)
   }, [displayed]);
 
   return (
@@ -28,10 +28,10 @@ function App() {
         <div id="navContainer"><Navigation displayed={displayed}/></div>
         <div id="dispContainer">
           <Switch>
-            <Route path="/" exact render={() => {setDisplayed('About'); return (<About />)}}/>
-            <Route path="/about" render={() => {setDisplayed('About'); return (<About />)}}/>
-            <Route path="/projects" render={() => {setDisplayed('Projects'); return (<Projects />)}} />
-            <Route path="/other" render={() => {setDisplayed('Other'); return (<Other />)}} />
+            <Route path="/" exact render={() => {return (<About updateParent={setDisplayed} />)}}/>
+            <Route path="/about" render={() => {return (<About updateParent={setDisplayed}/>)}}/>
+            <Route path="/projects" render={() => {return (<Projects updateParent={setDisplayed}/>)}} />
+            <Route path="/other" render={() => {return (<Other updateParent={setDisplayed}/>)}} />
             <Route render={() => {setDisplayed(''); return (<NotFound />)}} />
           </Switch>
         </div>

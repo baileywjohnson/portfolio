@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import './About.css'
 
 import MyStack from './MyStack'
 
-function About() {
+function About({updateParent}:any) {
+    useEffect(() => {
+        updateParent('About');
+    });
     return (
         <div className="about">
             <h2>Hi &#128075;, I'm Bailey Johnson.</h2>
