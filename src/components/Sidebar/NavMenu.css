@@ -21,6 +21,26 @@
     font-size: 14px;
 }
 
+#blogView{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blogView-text{
+    padding-right: 5px;
+}
+
+#resumeView{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resumeView-text{
+    padding-right: 5px;
+}
+
 .menuItem:hover{
     transform: scale(1.05);
 }
@@ -48,3 +68,16 @@
         margin-right: 5px;
     }
   }
+
+
+@media only screen and (max-width: 800px) {
+    .externalNavLinkIcon{
+        display: none;
+    }
+    #resumeView-text{
+        padding-right: 0px;
+    }
+    #blogView-text{
+        padding-right: 0px;
+    }
+}

@@ -6,7 +6,6 @@ import Navigation from './components/Sidebar/Navigation'
 
 import About from './components/Content/About'
 import Projects from './components/Content/Projects'
-import Blog from './components/Content/Blog'
 import Other from './components/Content/Other'
 import NotFound from './components/Content/NotFound'
 
@@ -32,7 +31,6 @@ function App() {
             <Route path="/" exact render={() => {setDisplayed('About'); return (<About />)}}/>
             <Route path="/about" render={() => {setDisplayed('About'); return (<About />)}}/>
             <Route path="/projects" render={() => {setDisplayed('Projects'); return (<Projects />)}} />
-            <Route path="/blog" render={() => {setDisplayed('Blog'); return (<Blog />)}} />
             <Route path="/other" render={() => {setDisplayed('Other'); return (<Other />)}} />
             <Route render={() => {setDisplayed(''); return (<NotFound />)}} />
           </Switch>

@@ -12,7 +12,7 @@ function Projects() {
             description: "This is the portfolio you're viewing at this very moment. It's a static single-page React app built with the create-react-app toolchain and deployed on Github Pages. It uses all custom-built layouts and components. In the future I'm considering making the switch to Gatsby for speed improvements.",
             viewLive: 'https://baileyjohnson.io',
             viewSource: 'https://github.com/baileywjohnson/portfolio',
-            tags: ['React.js', 'Vanilla JS']
+            tags: ['React', 'Vanilla JS']
         },
         {
             preview: '/the-wall_preview.png',
@@ -45,7 +45,7 @@ function Projects() {
 
     return (
         <div className='projects'>
-            <h2>&#128736;  Projects</h2>
+            <h2>&#127912;  Projects</h2>
             <p>Below are some of the projects I've completed over the past several years (either as personal projects or as a part of my undergraduate degree). Read more about each project via the README in it's source repository on Github. Feel free to contact me with any questions.</p>
             <div id="projectBox">
                 {
