@@ -13,3 +13,8 @@ html, body {
 a {
     outline: 0;
 }
+
+p {
+    line-height: 1.5;
+    font-size: 15px;
+}

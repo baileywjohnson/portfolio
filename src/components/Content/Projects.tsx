@@ -1,16 +1,124 @@
-import './Projects.css'
-
 import { FaGithub, FaExternalLinkAlt, FaExclamationCircle } from 'react-icons/fa'
 import { useEffect } from 'react'
 
-function Projects({updateParent}:any) {
+import styled from 'styled-components'
+
+const StyledProject = styled.div`
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    #top{
+        margin-bottom: 10px;
+    }
+
+    #bottom{
+        display: flex;
+        align-items: flex-start;
+
+        #bottom-left{
+            width: 60%;
+
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+    }
+        
+    }
+
+    #title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #description{
+        margin-top: 10px;
+    }
+`
+const ViewLiveLink = styled.a`
+    background-color: lightgreen;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    margin-left: 0px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+`
+const ViewSourceLink = styled.a`
+    background-color: lightblue;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 5px;
+    margin-left: 0px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+`
+const ProjectPreview = styled.img`
+    margin-left: auto;
+    max-width: 40%;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: auto;
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+`
+const ProjectTag = styled.div`
+    background-color: lightgrey;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    margin-left: 0px;
+    font-size: 13px;
+`
+const ProjectTags = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`
+const ViewButton = styled.div`
+    display: flex;
+    align-items: center;
+
+    div{
+        padding-top: 2px;
+        padding-right: 8px;
+    }
+`
+const WIPWarning = styled.div`
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    font-weight: bold;
+
+    svg {
+        padding-right: 5px;
+    }
+`
+const ViewButtons = styled.div`
+    display: flex;
+`
+
+const Projects = ({updateParent}:any) => {
 
     const projectData = [
         {
             preview: '/portfolio_preview.png',
             title: 'portfolio',
             wip: true,
-            description: "This is the portfolio you're viewing at this very moment. It's a static single-page React app built with the create-react-app toolchain and deployed on Github Pages. It uses all custom-built layouts and components. In the future I'm considering making the switch to Gatsby for speed improvements.",
+            description: "This is the portfolio you're viewing at this very moment. It's a static single-page React app built with the create-react-app toolchain and deployed on Github Pages (HashRouter since GH pages lacks support for BrowserRouter). It's using custom-built layouts and components (with some styled components). In the future I'm considering making the switch to Gatsby for speed improvements.",
             viewLive: 'https://baileyjohnson.io',
             viewSource: 'https://github.com/baileywjohnson/portfolio',
             tags: ['React', 'Typescript']
@@ -22,7 +130,7 @@ function Projects({updateParent}:any) {
             description: "The Wall is a single-page app built with vanilla Javascript and the History API to demo client-side routing without the use of any framework or designated router.  It's deployed on Heroku and, while not connected to any data store, does support a version of route-based searching for posts by ID.",
             viewLive: 'https://the-wall-spa.herokuapp.com/',
             viewSource: 'https://github.com/baileywjohnson/the-wall',
-            tags: ['Vanilla JS', 'Bootstrap']
+            tags: ['Vanilla JS', 'History API', 'Bootstrap']
         },
         {
             preview: '/balance-table_preview.png',
@@ -56,33 +164,33 @@ function Projects({updateParent}:any) {
                 {
                     projectData.map((project, i) => {
                         return (
-                            <div key={i} className="project">
-                                <div className="project-topContent">
-                                    <h3 className="project-title">{project.title}</h3>
-                                    <p className="project-description">{project.description}</p>
+                            <StyledProject key={i}>
+                                <div id="top">
+                                    <h3 id="title">{project.title}</h3>
+                                    <p id="description">{project.description}</p>
                                 </div>
-                                <div className="project-bottomContent">
-                                    <div className="project-bottomLeftContent">
-                                        <div className="viewButtons">
+                                <div id="bottom">
+                                    <div id="bottom-left">
+                                        <ViewButtons>
                                             {
-                                                project.viewLive !== '' ? <a id="view-live" href={project.viewLive} rel="noreferrer" target="_blank"><div id="viewLive"><div id="viewLive-text">View Live</div><FaExternalLinkAlt size={18}/></div></a> : ""
+                                                project.viewLive !== '' ? <ViewLiveLink href={project.viewLive} rel="noreferrer" target="_blank"><ViewButton><div>View Live</div><FaExternalLinkAlt size={18}/></ViewButton></ViewLiveLink> : ""
                                             }
-                                            <a id="view-source" href={project.viewSource} rel="noreferrer" target="_blank"><div id="viewSource"><div id="viewSource-text">View Source</div><FaGithub id="ghIcon" size={20}/></div></a>
-                                        </div>
-                                        <div className="projectTags">
+                                            <ViewSourceLink href={project.viewSource} rel="noreferrer" target="_blank"><ViewButton><div>View Source</div><FaGithub id="ghIcon" size={20}/></ViewButton></ViewSourceLink>
+                                        </ViewButtons>
+                                        <ProjectTags>
                                             {
                                                 project.tags.map((tag, i) => {
                                                     return (
-                                                        <div className="projectTag" key={i}>{tag}</div>
+                                                        <ProjectTag key={i}>{tag}</ProjectTag>
                                                     )
                                                 })
                                             }
-                                        </div>
-                                        {project.wip ? <div id="wipWarning"><FaExclamationCircle id="warningIcon" size={20}/> This project is a work-in-progress.</div> : ""}
+                                        </ProjectTags>
+                                        {project.wip ? <WIPWarning><FaExclamationCircle size={20}/> This project is a work-in-progress.</WIPWarning> : ""}
                                     </div>
-                                    <img className="projectPreview" alt="project preview" src={process.env.PUBLIC_URL + project.preview}/>
+                                    <ProjectPreview alt="project preview" src={process.env.PUBLIC_URL + project.preview}/>
                                 </div>
-                            </div>
+                            </StyledProject>
                         )
                     })
                 }

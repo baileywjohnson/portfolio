@@ -2,8 +2,8 @@ import Profile from './Profile'
 import Social from './Social'
 import NavMenu from './NavMenu'
 
-function Navigation({displayed}:any) {
-    return (
+const Navigation = ({displayed}:any) => {
+    return(
         <div>
             <Profile />
             <Social />
