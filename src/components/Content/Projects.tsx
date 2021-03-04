@@ -118,10 +118,10 @@ const Projects = ({updateParent}:any) => {
             preview: '/portfolio_preview.png',
             title: 'portfolio',
             wip: true,
-            description: "This is the portfolio you're viewing at this very moment. It's a static single-page React app built with the create-react-app toolchain and deployed on Github Pages (HashRouter since GH pages lacks support for BrowserRouter). It's using custom-built layouts and components (with some styled components). In the future I'm considering making the switch to Gatsby for speed improvements.",
+            description: "This is the portfolio you're viewing at this very moment. It's a static single-page React app built with the create-react-app toolchain and deployed on Github Pages (HashRouter since GH pages lacks support for BrowserRouter). It's using custom-built layouts and components (with some styled components). I'm considering making the switch to Gatsby in the future for speed improvements.",
             viewLive: 'https://baileyjohnson.io',
             viewSource: 'https://github.com/baileywjohnson/portfolio',
-            tags: ['React', 'Typescript']
+            tags: ['React', 'Typescript', 'Styled-Components']
         },
         {
             preview: '/the-wall_preview.png',
