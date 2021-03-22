@@ -1,3 +1,4 @@
+import React from 'react'
 import { FaGithub, FaExternalLinkAlt, FaExclamationCircle } from 'react-icons/fa'
 import { useEffect } from 'react'
 
@@ -157,7 +158,7 @@ const Projects = ({updateParent}:any) => {
     });
 
     return (
-        <div className='projects'>
+        <React.Fragment>
             <h2>&#127912;  Projects</h2>
             <p>Below are some of the projects I've completed over the past several years (either as personal projects or as a part of my undergraduate degree). Read more about each project via the README in it's source repository on Github. Feel free to contact me with any questions.</p>
             <div id="projectBox">
@@ -195,7 +196,7 @@ const Projects = ({updateParent}:any) => {
                     })
                 }
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 

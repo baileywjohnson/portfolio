@@ -1,14 +1,16 @@
+import React from 'react';
+
 import Profile from './Profile'
 import Social from './Social'
 import NavMenu from './NavMenu'
 
 const Navigation = ({displayed}:any) => {
     return(
-        <div>
+        <React.Fragment>
             <Profile />
             <Social />
             <NavMenu displayed={displayed}/>
-        </div>
+        </React.Fragment>
     )
 }
 

@@ -1,3 +1,4 @@
+import React from 'react'
 import {useEffect} from 'react'
 
 const Other = ({updateParent}:any) => {
@@ -7,7 +8,7 @@ const Other = ({updateParent}:any) => {
     });
 
     return (
-        <div className='other'>
+        <React.Fragment>
             <h2>&#128161; Other</h2>
             <p>This page contains a few other things I thought might be interesting to include in my portfolio (it also serves as a decent reference for when I need to set-up/reconfigure my dev tools).</p>
 
@@ -30,7 +31,7 @@ const Other = ({updateParent}:any) => {
                 <li><b>Designing Data-Intensive Applications</b> by Martin Kleppmann</li>
                 <li><b>Refactoring UI</b> by Adam Wathan and Steve Schoger</li>
             </ul>
-        </div>
+        </React.Fragment>
     )
 }
 

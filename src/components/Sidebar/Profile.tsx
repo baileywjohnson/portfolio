@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const ProfilePhoto = styled.img`
@@ -35,13 +36,13 @@ const ProfileText = styled.div`
 
 const Profile = () => {
     return (
-        <div className="Profile">
+        <React.Fragment>
             <ProfilePhoto alt="Profile Photo" src={process.env.PUBLIC_URL + '/headshot.png'} />
             <ProfileText>
                 <h2>Bailey Johnson</h2>
                 <h4>Full-Stack Software Engineer</h4>
             </ProfileText>
-        </div>
+        </React.Fragment>
     )
 }
 
