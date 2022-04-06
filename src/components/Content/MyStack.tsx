@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { SiReact, SiTypescript, SiGraphql, SiPostgresql } from 'react-icons/si'
+import { SiReact, SiPython, SiAmazonaws, SiPostgresql } from 'react-icons/si'
 
 import styled from 'styled-components'
 
@@ -73,32 +73,32 @@ const MyStack = ({updateParent}:any) => {
 
     const stackData = [
         {
-            name: 'TypeScript',
-            icon: <SiTypescript size={30}/>,
-            iconColor: '#007ACC',
-            description: <p id="description"><b>TypeScript</b> (and sometimes just plain Javascript depending on the project) is my go-to language for building full-stack applications (<b>Node</b> + <b>Express</b> on the backend).  I really like being able to keep the frontend and backend code in the same language and Typescript providing (optional) static typing makes it easier to catch bugs early on.</p>,
-            alternatives: <p id="alternatives">Some other backend languages I'm comfortable with are <b>Python</b> (Flask), <b>Java</b> and <b>C#</b> (ASP.NET).</p>
+            name: 'Python',
+            icon: <SiPython size={30}/>,
+            iconColor: '#ffd343',
+            description: <p id="description"><b>Python</b> is currently my go-to language for building applications (<b>Django</b>, <b>Flask</b> or <b>FastAPI</b>) and is also the language I'm most proficient in.  While I do miss being able to keep the frontend and backend code in the same language (probably the best part about full-stack JS/TS projects), I think the readability of a well-written Python backend makes up for it.</p>,
+            alternatives: <p id="alternatives">Some other backend languages I'm comfortable with are <b>Javascript/Typescript</b> (Express), <b>Java</b> (Spring, Javalin + Maven) and <b>C#</b> (ASP.NET).</p>
         },
         {
             name: 'React',
             icon: <SiReact size={30}/>,
             iconColor: '#61DBFB',
-            description: <p id="description"><b>React</b> is my frontend framework of choice. I chose it because liked the ecosystem (component libraries, native tooling, etc.), design patterns, and becuase I was drawn to its increase in popularity over the past several years.</p>,
-            alternatives: <p id="alternatives">I'm not familiar with any other frontend frameworks but I do have some professional experience building frontends with <b>vanilla Javascript</b> and <b>JQuery</b>.</p>
-        },
-        {
-            name: 'GraphQL',
-            icon: <SiGraphql size={30}/>,
-            iconColor: '#e535ab',
-            description: <div id="description"><p><b>GraphQL</b> is the one of the newest tools I've started using in some of my side-projects.  A few of the reasons I like it are...</p><ol><li>I can use it with any database.</li><li>When I hit the GraphQL API, I *usually* get exactly what I asked for (no more, no less).</li><li>It leaves me with one endpoint, and I think that's neat.</li></ol></div>,
-            alternatives: <p id="alternatives">That being said, I've found that GraphQL isn't always the best choice for a backend API, especially if caching responses is a concern (it's also a no-go if the frontend relies on response codes).</p>
+            description: <p id="description"><b>React</b> is my frontend framework of choice. I chose it because liked the ecosystem (component libraries, native tooling, etc.), design patterns, and becuase I was drawn to it's increase in popularity over the past several years.</p>,
+            alternatives: <p id="alternatives">The only other frontend framework I have professional experience with is <b>Vue.js</b>.</p>
         },
         {
             name: 'PostgreSQL',
             icon: <SiPostgresql size={30}/>,
             iconColor: '#0064a5',
-            description: <p id="description"><b>PostgreSQL</b> is generally my pick for a relational SQL database. This could be substituted out for a number of other similar databases as the process for extracting the necessary data to fulfill API requests doesn't really tend to differ all that much (aside from proprietary extensions).  The other relational databases that I have experience working with are <b>SQL Server</b>, <b>MySQL</b> and <b>Oracle</b>.</p>,
+            description: <p id="description"><b>PostgreSQL</b> is generally my pick for a relational SQL database. The other relational databases that I have experience working with are <b>SQL Server</b> and <b>MySQL</b>.</p>,
             alternatives: <p id="alternatives">As for NoSQL databases, <b>MongoDB</b> is my go-to (I also have a small amount of experience with <b>Redis</b>, which sort-of fits in this category).</p>
+        },
+        {
+            name: 'AWS',
+            icon: <SiAmazonaws size={30}/>,
+            iconColor: '#00a8e1',
+            description: <p id="description"><b>AWS</b> is a beast of it's own but it's something I've become more and more familiar with over the past year. I've learned to manage EC2 instances, deploy <b>Docker</b> containers to ECS from <b>Jenkins</b>, leverage S3 buckets for fast access to files and (very recently) started learning to work with EKS clusters.</p>,
+            alternatives: <p id="alternatives">One of my hobbies is self-hosting and so I've become familiar with a few other cloud providers like <b>DigitalOcean</b> and <b>Heroku</b>.</p>
         }
     ]
 

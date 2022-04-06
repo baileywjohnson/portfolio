@@ -112,8 +112,8 @@ const NavMenu = ({displayed}:any) => {
             <a href="/resume.pdf" target="_blank">
                 <MenuItem clicked={false}><ExternalNavLink><div>Resume</div><FaExternalLinkAlt /></ExternalNavLink></MenuItem>
             </a>
-            <a href="https://medium.com/@baileywjohnson" target="_blank" rel="noreferrer">
-                <MenuItem clicked={false}><ExternalNavLink><div>Blog</div><FaExternalLinkAlt /></ExternalNavLink></MenuItem>
+            <a href="https://www.youtube.com/channel/UCT8I4I7r0ZfIeh-pU43tjUw" target="_blank" rel="noreferrer">
+                <MenuItem clicked={false}><ExternalNavLink><div>Videos</div><FaExternalLinkAlt /></ExternalNavLink></MenuItem>
             </a>
             <Link to="/other">{results[2] ? <MenuItem clicked={true}>Other</MenuItem> : <MenuItem clicked={false}>Other</MenuItem>}</Link>
         </StyledNavMenu>
