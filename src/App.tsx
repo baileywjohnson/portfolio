@@ -53,6 +53,11 @@ const StyledApp = styled.div`
         to   { opacity: 1; }
     }
     
+    /* Widescreen Size */
+    @media only screen and (min-width: 1800px) {
+        width: 1170px;
+    }
+
     /* Tablet Size */
     @media only screen and (max-width: 1200px) {
         width: 80%;
