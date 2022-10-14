@@ -40,7 +40,8 @@ const Profile = () => {
             <ProfilePhoto alt="Profile Photo" src={process.env.PUBLIC_URL + '/headshot.png'} />
             <ProfileText>
                 <h2>Bailey Johnson</h2>
-                <h4>Full-Stack Software Engineer</h4>
+                <h4>Software Engineer</h4>
+                <h4>Seattle, WA</h4>
             </ProfileText>
         </React.Fragment>
     )
