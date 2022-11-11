@@ -76,14 +76,14 @@ const MyStack = ({updateParent}:any) => {
             name: 'Python',
             icon: <SiPython size={30}/>,
             iconColor: '#ffd343',
-            description: <p id="description"><b>Python</b> is currently my go-to language for building applications quickly (<b>Django</b>, <b>Flask</b> or <b>FastAPI</b>) and is also the language I'm most proficient in.  While I value being able to keep the frontend and backend code in the same language (i.e. full-stack JS/TS projects), I think the readability of a well-written Python backend makes up for it.</p>,
+            description: <p id="description"><b>Python</b> is currently my go-to language for building applications quickly (<b>Django</b>, <b>Flask</b> or <b>FastAPI</b>) and is also the language I'm most proficient in.  While I do value being able to keep the frontend and backend code in the same language (i.e. full-stack JS/TS projects), I think the readability of a well-written Python backend makes up for it.</p>,
             alternatives: <p id="alternatives">Some other backend languages I'm comfortable with are <b>Javascript/Typescript</b> (Express), <b>Java</b> (Spring, Javalin + Maven) and <b>C#</b> (ASP.NET).</p>
         },
         {
             name: 'React',
             icon: <SiReact size={30}/>,
             iconColor: '#61DBFB',
-            description: <p id="description"><b>React</b> is my frontend framework of choice. I chose it because liked the ecosystem (component libraries, native tooling, etc.), design patterns, and becuase I was drawn to it's increase in popularity.</p>,
+            description: <p id="description"><b>React</b> is my frontend framework of choice. I really like the ecosystem (component libraries, native tooling, etc.) and design patterns the framework encourages.</p>,
             alternatives: <p id="alternatives">The only other frontend framework I have professional experience with is <b>Vue.js</b>.</p>
         },
         {
@@ -91,7 +91,7 @@ const MyStack = ({updateParent}:any) => {
             icon: <SiPostgresql size={30}/>,
             iconColor: '#0064a5',
             description: <p id="description"><b>PostgreSQL</b> is generally my pick for a relational SQL database. The other relational databases that I have experience working with are <b>SQL Server</b> and <b>MySQL</b>.</p>,
-            alternatives: <p id="alternatives">As for NoSQL databases, <b>MongoDB</b> is my go-to, only because it's what I have experience with (I also have a small amount of experience with <b>Redis</b>, which sort-of fits in this category).</p>
+            alternatives: <p id="alternatives">As for NoSQL databases, <b>MongoDB</b> is my go-to doc store, only because it's what I have experience with (I also have a small amount of experience with <b>Redis</b> as a message broker for Celery).  I don't have much experience with wide-column or graph stores but they are things I'm interested in learning about.</p>
         },
         {
             name: 'AWS',
