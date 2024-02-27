@@ -6,7 +6,6 @@ import Navigation from './components/Sidebar/Navigation'
 
 import About from './components/Content/About'
 import Projects from './components/Content/Projects'
-import Other from './components/Content/Other'
 import NotFound from './components/Content/NotFound'
 
 import styled from 'styled-components'
@@ -173,14 +172,13 @@ const App = () => {
             <Route path="/" exact render={() => {return (<About updateParent={setDisplayed} />)}}/>
             <Route path="/about" render={() => {return (<About updateParent={setDisplayed}/>)}}/>
             <Route path="/projects" render={() => {return (<Projects updateParent={setDisplayed}/>)}} />
-            <Route path="/other" render={() => {return (<Other updateParent={setDisplayed}/>)}} />
             <Route render={() => {return (<NotFound updateParent={setDisplayed}/>)}} />
           </Switch>
         </DisplayContainer>
       </StyledApp>
       <SizeWarning>Please View This Portfolio on a Wider Display</SizeWarning>
       <Footer>
-        <p>&#11088; Created by <CreatorLink href="https://github.com/baileywjohnson/portfolio" rel="noreferrer" target="_blank">Bailey Johnson</CreatorLink></p>
+        <p>&#11088; Created by <CreatorLink href="https://baileyjohnson.io" rel="noreferrer" target="_blank">Bailey Johnson</CreatorLink></p>
       </Footer>
       <Route path="/resume.pdf" onEnter={reload} />
     </Router>

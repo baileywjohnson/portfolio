@@ -76,8 +76,8 @@ const MyStack = ({updateParent}:any) => {
             name: 'Python',
             icon: <SiPython size={30}/>,
             iconColor: '#ffd343',
-            description: <p id="description"><b>Python</b> is currently my go-to language for building applications quickly (<b>Django</b>, <b>Flask</b> or <b>FastAPI</b>) and is also the language I'm most proficient in.  While I do value being able to keep the frontend and backend code in the same language (i.e. full-stack JS/TS projects), I think the readability of a well-written Python backend makes up for it.</p>,
-            alternatives: <p id="alternatives">Some other backend languages I'm comfortable with are <b>Javascript/Typescript</b> (Express), <b>Java</b> (Spring, Javalin + Maven) and <b>C#</b> (ASP.NET).</p>
+            description: <p id="description"><b>Python</b> remains my go-to language for building applications quickly (<b>Django</b>, <b>Flask</b> or <b>FastAPI</b>) and is also the language I'm most proficient in.  While I do value being able to keep the frontend and backend code in the same language (i.e. full-stack JS/TS projects), I think the readability of a well-written Python backend makes up for it.</p>,
+            alternatives: <p id="alternatives">Some other backend languages I'm comfortable with are <b>Ruby</b> (Rails), <b>Javascript/Typescript</b> (Express), <b>Java</b> (Spring, Javalin + Maven) and <b>C#</b> (ASP.NET).</p>
         },
         {
             name: 'React',

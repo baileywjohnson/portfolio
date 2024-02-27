@@ -118,9 +118,9 @@ const Projects = ({updateParent}:any) => {
         {
             preview: '/portfolio_preview.png',
             title: 'portfolio',
-            wip: true,
-            description: "This is the portfolio you're viewing at this very moment. It's a static single-page React app built with the create-react-app toolchain and deployed on Github Pages (HashRouter since GH pages lacks support for BrowserRouter). It's using custom-built layouts and components (with some styled components). I'm considering making the switch to Gatsby in the future for speed improvements.",
-            viewLive: 'https://baileyjohnson.io',
+            wip: false,
+            description: "This portfolio is a static single-page React app built with the create-react-app toolchain and deployed on Github Pages (HashRouter since GH pages lacks support for BrowserRouter). It's using custom-built layouts and components (with some styled components).",
+            viewLive: '',
             viewSource: 'https://github.com/baileywjohnson/portfolio',
             tags: ['React', 'Typescript', 'Styled-Components']
         },
@@ -128,28 +128,28 @@ const Projects = ({updateParent}:any) => {
             preview: '/the-wall_preview.png',
             title: 'the-wall',
             wip: false,
-            description: "The Wall is a single-page app built with vanilla Javascript and the History API to demo client-side routing without the use of any framework or designated router.  It's deployed on Heroku and, while not connected to any data store, does support a version of route-based searching for posts by ID.",
-            viewLive: 'https://the-wall-spa.herokuapp.com/',
+            description: "The Wall is a single-page app I built with the History API to demo client-side routing without the use of any framework or designated router.  It used to be deployed on Heroku and, while not connected to any data store, does support a version of route-based searching for posts by ID.  Just thought it was something cool to play around with.",
+            viewLive: '',
             viewSource: 'https://github.com/baileywjohnson/the-wall',
-            tags: ['Vanilla JS', 'History API', 'Bootstrap']
+            tags: ['JS', 'History API', 'Bootstrap']
         },
         {
             preview: '/balance-table_preview.png',
             title: 'balance-table',
             wip: false,
-            description: "This project implements a balancing algorithm for placing 'blocks' (integers) on/into a 'table' (two-dimensional matrix), ensuring the calculated center-of-gravity is not to exceed a range at which the table would fall.  It's a Python desktop application that makes use of a library called Eel for building web GUI's (the GUI allows users to input a table size and visualizes the placement algorithm in real-time).",
+            description: "This project implements a balancing algorithm for placing 'blocks' (integers) on/into a 'table' (two-dimensional matrix), ensuring the calculated center-of-gravity is not to exceed a range at which the table would fall.  It's a Python application that makes use of a library called Eel for building web GUI's (the GUI allows users to input a table size and visualizes the placement algorithm in real-time).  Built for an intro ML course.",
             viewLive: '',
             viewSource: 'https://github.com/baileywjohnson/balance-table',
-            tags: ['Python', 'Eel', 'Vanilla JS']
+            tags: ['Python', 'Eel', 'JS']
         },
         {
             preview: '/mpi-matrix-mult_preview.png',
             title: 'mpi-matrix-mult',
             wip: false,
-            description: "This project uses C + MPI to perform matrix multiplication in parallel. The project folder contains scripts that generate the matrix files, which are then read in by serial/parallel multipliers. Built for an introductory parallel computing course, performance benchmarked on XSEDE's COMET cluster.",
+            description: "This project uses C + MPI to perform matrix multiplication in parallel. The project folder contains scripts that generate the matrix files, which are then read in by serial/parallel multipliers. Built for an intro parallel/HPC course, performance benchmarked on XSEDE's COMET cluster.",
             viewLive: '',
             viewSource: 'https://github.com/baileywjohnson/mpi-matrix-mult',
-            tags: ['C', 'MPI', 'GNU Make']
+            tags: ['C', 'MPI']
         }
     ]
 
@@ -159,8 +159,18 @@ const Projects = ({updateParent}:any) => {
 
     return (
         <React.Fragment>
-            <h2>&#127912;  Projects</h2>
-            <p>Below are some of the projects I've completed over the past several years (either as personal projects or as a part of my undergraduate degree). Read more about each project via the README in it's source repository on Github. Feel free to contact me with any questions.</p>
+            <h2>Things I've Built &#128736;</h2>
+            <p>I've had the opportunity to contribute-to and lead the development on some really cool projects over the last several years. I can't share any source files for these but feel free to ask me about...</p>
+            <ul>
+                <li><b>Building <a href="https://www.usebracket.com/">Bracket</a> @ Flexport</b></li>
+                <br/>
+                <li><b>Taking an ML Pipeline from Monolith &#8594; Microservices & Owning Tokenization</b></li>
+                <br/>
+                <li><b>Supporting ISS Operations Above FCR-1 in the <a href="https://www.nasa.gov/johnson/jsc-mission-control-center/">Mission Control Center</a></b></li>
+            </ul>
+            <p>For more information about these and other projects I've worked on check out my resume and please don't hesitate to get in touch.</p>
+            <h3>Older Projects</h3>
+            <p>These are some of my favorites from further back, built either for undergrad courses or for fun. All of the source files for these, along with some other small projects, are available on my personal Github profile.</p>
             <div id="projectBox">
                 {
                     projectData.map((project, i) => {
