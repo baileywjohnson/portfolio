@@ -1,8 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react';
 
-import MyStack from './MyStack'
-
 const About = ({updateParent}:any) => {
     useEffect(() => {
         updateParent('About');

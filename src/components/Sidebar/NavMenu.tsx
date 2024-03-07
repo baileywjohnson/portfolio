@@ -65,14 +65,17 @@ const StyledNavMenu = styled.div`
     @media only screen and (max-width: 1200px) {
         width: 90%;
         display: flex;
+        justify-content: center;
     }
 
     @media only screen and (max-width: 800px) {
         width: 90%;
+        justify-content: center;
     }
 
     @media only screen and (max-width: 400px) {
         width: 99%;
+        justify-content: center;
     }
 `
 const ExternalNavLink = styled.div`
