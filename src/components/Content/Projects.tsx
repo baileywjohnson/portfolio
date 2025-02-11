@@ -116,19 +116,10 @@ const Projects = ({updateParent}:any) => {
 
     const projectData = [
         {
-            preview: '/portfolio_preview.png',
-            title: 'portfolio',
-            wip: false,
-            description: "This portfolio is a static single-page React app built with the create-react-app toolchain and deployed on Github Pages (HashRouter since GH pages lacks support for BrowserRouter). It's using custom-built layouts and components (with some styled components).",
-            viewLive: '',
-            viewSource: 'https://github.com/baileywjohnson/portfolio',
-            tags: ['React', 'Typescript', 'Styled-Components']
-        },
-        {
             preview: '/the-wall_preview.png',
             title: 'the-wall',
             wip: false,
-            description: "The Wall is a single-page app I built with the History API to demo client-side routing without the use of any framework or designated router.  It used to be deployed on Heroku and, while not connected to any data store, does support a version of route-based searching for posts by ID.  Just thought it was something cool to play around with.",
+            description: "The Wall is a single-page app I built with the History API to demo client-side routing without the use of any framework or designated router.  It used to be deployed on Heroku and, while not connected to any data store, does support a version of route-based searching for posts by ID.",
             viewLive: '',
             viewSource: 'https://github.com/baileywjohnson/the-wall',
             tags: ['JS', 'History API', 'Bootstrap']
