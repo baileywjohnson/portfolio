@@ -116,22 +116,22 @@ const Projects = ({updateParent}:any) => {
 
     const projectData = [
         {
-            preview: '/the-wall_preview.png',
-            title: 'the-wall',
-            wip: false,
-            description: "The Wall is a single-page app I built with the History API to demo client-side routing without the use of any framework or designated router.  It used to be deployed on Heroku and, while not connected to any data store, does support a version of route-based searching for posts by ID.",
-            viewLive: '',
-            viewSource: 'https://github.com/baileywjohnson/the-wall',
-            tags: ['JS', 'History API', 'Bootstrap']
-        },
-        {
             preview: '/balance-table_preview.png',
             title: 'balance-table',
             wip: false,
-            description: "This project implements a balancing algorithm for placing 'blocks' (integers) on/into a 'table' (two-dimensional matrix), ensuring the calculated center-of-gravity is not to exceed a range at which the table would fall.  It's a Python application that makes use of a library called Eel for building web GUI's (the GUI allows users to input a table size and visualizes the placement algorithm in real-time).  Built for an intro ML course.",
+            description: "This project implements a balancing algorithm for placing 'blocks' (integers) on/into a 'table' (two-dimensional matrix), ensuring the calculated center-of-gravity is not to exceed a range at which the table would fall.  It's a Python application that makes use of a library called Eel for building web GUI's (the GUI allows users to input a table size and visualizes the placement algorithm in real-time).",
             viewLive: '',
             viewSource: 'https://github.com/baileywjohnson/balance-table',
             tags: ['Python', 'Eel', 'JS']
+        },
+        {
+            preview: '/the-wall_preview.png',
+            title: 'the-wall',
+            wip: false,
+            description: "The Wall is a single-page app I built with the History API to demo client-side routing without the use of any framework or designated router.  It's not connected to any data store, but does support a version of route-based searching for posts by ID.",
+            viewLive: '',
+            viewSource: 'https://github.com/baileywjohnson/the-wall',
+            tags: ['JS', 'History API', 'Bootstrap']
         },
         {
             preview: '/mpi-matrix-mult_preview.png',
@@ -151,17 +151,17 @@ const Projects = ({updateParent}:any) => {
     return (
         <React.Fragment>
             <h2>Things I've Built &#128736;</h2>
-            <p>I've had the opportunity to contribute-to and lead the development on some really cool projects over the last several years. I can't share any source files for these but feel free to ask me about...</p>
+            <p>I've had the opportunity to contribute-to and lead the development on some really cool projects over the last several years. Ask me about:</p>
             <ul>
-                <li><b>Building <a href="https://www.usebracket.com/">Bracket</a> @ Flexport</b></li>
+                <li><b>Building Two-Way Syncs @ Flexport</b></li>
                 <br/>
-                <li><b>Taking an ML Pipeline from Monolith &#8594; Microservices & Owning Tokenization</b></li>
+                <li><b>Taking an ML Pipeline from Monolith &#8594; Microservices</b></li>
                 <br/>
                 <li><b>Supporting ISS Operations Above FCR-1 in the <a href="https://www.nasa.gov/johnson/jsc-mission-control-center/">Mission Control Center</a></b></li>
             </ul>
             <p>For more information about these and other projects I've worked on check out my resume and please don't hesitate to get in touch.</p>
             <h3>Older Projects</h3>
-            <p>These are some of my favorites from further back, built either for undergrad courses or for fun. All of the source files for these, along with some other small projects, are available on my personal Github profile.</p>
+            <p>These are some of my favorites from further back, built either for undergrad courses or for fun. All of the source files for these, along with some other small projects, are available on my personal Github.</p>
             <div id="projectBox">
                 {
                     projectData.map((project, i) => {
