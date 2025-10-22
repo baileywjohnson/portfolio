@@ -14,7 +14,7 @@ const StyledSocial = styled.div`
     }
 
     a {
-        width: 25%;
+        width: 33.33%;
         color: black;
     }
     
@@ -35,7 +35,6 @@ const Social = () => {
         <StyledSocial>
             <a href="https://github.com/baileywjohnson" rel="noreferrer" target="_blank"><FaGithubSquare size={30}/></a>
             <a href="https://www.linkedin.com/in/baileywjohnson/" rel="noreferrer" target="_blank"><FaLinkedin size={30}/></a>
-            <a href="https://twitter.com/baileywjohnsonx" rel="noreferrer" target="_blank"><FaTwitterSquare size={30}/></a>
             <a href="mailto:baileywjohnson@gmail.com" rel="noreferrer" target="_blank"><FaEnvelopeSquare size={30}/></a>
         </StyledSocial>
     )
