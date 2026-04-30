@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bailey Johnson</title>
+  <meta name="description" content="Bailey Johnson — Software Engineer in Seattle, WA" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <aside class="sidebar">
+      <img class="photo" src="assets/headshot.jpg" alt="Bailey Johnson" />
+      <div class="profile">
+        <h1>Bailey Johnson</h1>
+        <p>Software Engineer</p>
+        <p>Seattle, WA</p>
+      </div>
+
+      <div class="social">
+        <a href="https://github.com/baileywjohnson" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 32 448 448" width="30" height="30" fill="currentColor"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.3-161.5 162.1-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/baileywjohnson/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30" height="30" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146Zm4.943 12.248V6.169H2.542v7.225h2.401Zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016Zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4Z"/></svg>
+        </a>
+        <a href="mailto:baileywjohnson@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 32 448 448" width="30" height="30" fill="currentColor"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zM178.117 262.104C87.429 196.287 88.353 196.121 64 177.167V152c0-13.255 10.745-24 24-24h272c13.255 0 24 10.745 24 24v25.167c-24.371 18.969-23.434 19.124-114.117 84.938-10.5 7.655-31.392 26.12-45.883 25.894-14.503.218-35.367-18.227-45.883-25.895zM384 217.775V360c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V217.775c13.958 10.794 33.329 25.236 95.303 70.214 14.162 10.341 37.975 32.145 64.694 32.01 26.887.134 51.037-22.041 64.72-32.025 61.958-44.965 81.325-59.406 95.283-70.199z"/></svg>
+        </a>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-btn active" data-target="about">About</button>
+        <button class="nav-btn" data-target="projects">Projects</button>
+        <a class="nav-btn external" href="assets/resume.pdf" target="_blank" rel="noreferrer">
+          Resume
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="11" height="11" fill="currentColor"><path d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h112a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0L435.28 133.32 471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24z"/></svg>
+        </a>
+      </nav>
+    </aside>
+
+    <div class="content">
+      <section id="about" class="page">
+        <h2>Hi &#128075;, I'm Bailey.</h2>
+        <p>I'm a <b>software engineer</b> at <a href="https://www.flexport.com/" target="_blank" rel="noreferrer">Flexport</a>. I have experience building services and APIs that power complex applications. I like handling software integrations and really dig distributed systems.</p>
+        <p>I've also spent a large portion of my career working with machine learning models, first by building the infrastructure and tooling necessary to support them, and more recently by leveraging frontier models to build powerful client-facing features. Now I literally work <b>with</b> them every day.</p>
+        <p>The amount of progress these last few years has been astonishing and has made me incredibly excited for what comes next in the intelligence era. I'm currently studying ML at <a href="https://omscs.gatech.edu/" target="_blank" rel="noreferrer" aria-label="Georgia Tech">Georgia Tech</a> to better comprehend how we got here and where we might be going.</p>
+
+        <h3>Quick Career Overview</h3>
+        <p>In May of 2020 &#129440;, after a short internship at <a href="https://www.dnsfilter.com/" target="_blank" rel="noreferrer">DNSFilter</a> (2016 - 2017) and about a year and a half of co-op dev work at <a href="https://www.wetstonetech.com/" target="_blank" rel="noreferrer">WetStone</a> (2018 - 2020), I graduated from Coastal Carolina University with a B.S. in Computer Science. I then relocated from South Carolina to the Houston-area to work full-time as a SWE at <a href="https://www.nasa.gov/" target="_blank" rel="noreferrer">NASA's</a> Johnson Space Center &#128640;.</p>
+        <p>A little over a year later I accepted a fully remote position with <a href="https://www.pressganey.com/" target="_blank" rel="noreferrer">Press Ganey</a> (NarrativeDx). I grew a lot in that role and it also afforded me the opportunity to work from anywhere in the states.</p>
+        <p>I visited Seattle in February of 2022 and fell in love with it, so eight months later I packed up my things and drove across the country. I joined Flexport in April of 2023.</p>
+
+        <h3>More About Me</h3>
+        <p>I've been a computer geek pretty much my entire life. In middle school I was building webpages, learning TI-BASIC and writing some pretty bad games in Python. I had the opportunity to join a <a href="https://aast.horrycountyschools.net/programs/computer-science" target="_blank" rel="noreferrer">CS program</a> during high-school and also started my first internship senior year.</p>
+        <p>While I've landed on ML and software engineering, I was pretty interested in cybersecurity growing up. It led me to some security conferences, CTF-events and eventually to me landing that co-op position with WetStone (doing development to support their security/digital forensics tools). I think it was there I realized I was less interested in security professionally and really just liked building software.</p>
+        <p>When I'm not at my desk I enjoy live music, hiking, longboarding, playing guitar and making coffee &#9749;.</p>
+      </section>
+
+      <section id="projects" class="page hidden">
+        <h2>Things I've Built&nbsp; &#128736;</h2>
+        <p>I've had the opportunity to contribute-to and lead the development on some pretty neat projects throughout my career.</p>
+        <p>Ask Me About:</p>
+        <ul>
+          <li><b>Building Flexport Intelligence</b></li>
+          <li><b>Taking a NLP Pipeline from a Monolith &#8594; SOA</b></li>
+          <li><b>Supporting ISS Operations Above FCR-1 in the <a href="https://www.nasa.gov/johnson/jsc-mission-control-center/" target="_blank" rel="noreferrer">Mission Control Center</a></b></li>
+        </ul>
+        <p>For more information about these and other projects I've worked on professionally, please check out my <a href="assets/resume.pdf" target="_blank" rel="noreferrer">resume</a> and don't hesitate to get in touch.</p>
+
+        <h3>Hobby Projects</h3>
+        <p>I tend to use my hobby/side projects as an opportunity to explore interests I wouldn't get the chance to day-to-day (that is to say, they're a little all over the place). These are some of my favorites, but there are plenty more on my GitHub.</p>
+
+        <article class="project">
+          <h3 class="project-title">&#127871; darkreel</h3>
+          <p>A self-hosted app for storing and streaming media with end-to-end encryption. An exercise in private, secure and performant agentic software development. Pairs well with <a href="https://github.com/baileywjohnson/ppvda" target="_blank" rel="noreferrer">PPVDA</a> and <a href="https://github.com/baileywjohnson/darkreel-cli" target="_blank" rel="noreferrer">darkreel-cli</a>.</p>
+          <div class="project-bottom">
+            <div class="project-bottom-left">
+              <div class="project-buttons">
+                <a class="project-btn live" href="https://darkreel.io" target="_blank" rel="noreferrer">darkreel.io
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14" fill="currentColor"><path d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h112a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0L435.28 133.32 471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24z"/></svg>
+                </a>
+                <a class="project-btn source" href="https://github.com/baileywjohnson/darkreel" target="_blank" rel="noreferrer">View Source
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                </a>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Go</span>
+                <span class="project-tag">JS</span>
+              </div>
+            </div>
+            <img class="project-preview" alt="darkreel preview" src="assets/darkreel_preview.jpg" />
+          </div>
+        </article>
+
+        <h3>Old Stuff</h3>
+        <p>These are some of my favorites from further back, built either for undergrad courses or for fun. All of these are available on my <a href="https://github.com/baileywjohnson" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>.</p>
+
+        <article class="project">
+          <h3 class="project-title">balance-table</h3>
+          <p>This project implements a balancing algorithm for placing 'blocks' (integers) on/into a 'table' (two-dimensional matrix), ensuring the calculated center-of-gravity is not to exceed a range at which the table would fall. It's a Python application that makes use of a library called Eel for building web GUI's (the GUI allows users to input a table size and visualizes the placement algorithm in real-time).</p>
+          <div class="project-bottom">
+            <div class="project-bottom-left">
+              <div class="project-buttons">
+                <a class="project-btn source" href="https://github.com/baileywjohnson/balance-table" target="_blank" rel="noreferrer">View Source
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                </a>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Eel</span>
+                <span class="project-tag">JS</span>
+              </div>
+            </div>
+            <img class="project-preview" alt="balance-table preview" src="assets/balance-table_preview.png" />
+          </div>
+        </article>
+
+        <article class="project">
+          <h3 class="project-title">the-wall</h3>
+          <p>The Wall is a single-page app I built with the History API to demo client-side routing without the use of any framework or designated router. It's not connected to any data store, but does support a version of route-based searching for posts by ID.</p>
+          <div class="project-bottom">
+            <div class="project-bottom-left">
+              <div class="project-buttons">
+                <a class="project-btn source" href="https://github.com/baileywjohnson/the-wall" target="_blank" rel="noreferrer">View Source
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                </a>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">JS</span>
+                <span class="project-tag">History API</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+            </div>
+            <img class="project-preview" alt="the-wall preview" src="assets/the-wall_preview.png" />
+          </div>
+        </article>
+
+        <article class="project">
+          <h3 class="project-title">mpi-matrix-mult</h3>
+          <p>This project uses C + MPI to perform matrix multiplication in parallel. The project folder contains scripts that generate the matrix files, which are then read in by serial/parallel multipliers. Built for an intro parallel/HPC course, performance benchmarked on XSEDE's COMET cluster.</p>
+          <div class="project-bottom">
+            <div class="project-bottom-left">
+              <div class="project-buttons">
+                <a class="project-btn source" href="https://github.com/baileywjohnson/mpi-matrix-mult" target="_blank" rel="noreferrer">View Source
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                </a>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">C</span>
+                <span class="project-tag">MPI</span>
+              </div>
+            </div>
+            <img class="project-preview" alt="mpi-matrix-mult preview" src="assets/mpi-matrix-mult_preview.png" />
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &#11088; Created by <a href="https://baileyjohnson.io" target="_blank" rel="noreferrer">Bailey Johnson</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
