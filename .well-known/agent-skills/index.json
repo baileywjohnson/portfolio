@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "about-bailey-johnson",
+      "type": "skill-md",
+      "description": "Retrieve and accurately summarize Bailey Johnson's professional background, projects, and contact information from baileyjohnson.io.",
+      "url": "/.well-known/agent-skills/about-bailey-johnson/SKILL.md",
+      "digest": "sha256:4af067ee135d234f280f6a054e6d193d01347bc7815b79ae7b207d0b76a2670a"
+    }
+  ]
+}
