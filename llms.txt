@@ -1,0 +1,31 @@
+# Bailey Johnson
+
+> Software engineer based in Seattle, WA. Currently at Flexport, building services, APIs, and ML-powered client-facing features. Studying ML at Georgia Tech (OMSCS).
+
+Bailey Johnson is a software engineer focused on backend services, software integrations, distributed systems, and applied machine learning. This site is a personal portfolio: background, career history, and selected projects. The full content is available as Markdown at https://baileyjohnson.io/index.md.
+
+## Pages
+
+- [Portfolio (Markdown)](https://baileyjohnson.io/index.md): Complete portfolio content — about, career overview, and projects — in clean Markdown.
+- [Portfolio (HTML)](https://baileyjohnson.io/): The rendered portfolio site.
+- [Resume (PDF)](https://baileyjohnson.io/assets/resume.pdf): Professional resume.
+
+## Projects
+
+- [darkreel](https://github.com/baileywjohnson/darkreel): Self-hosted, end-to-end encrypted media storage and streaming app. Live at https://darkreel.io
+- [spike-ensemble](https://github.com/baileywjohnson/spike-ensemble): Closed-loop system driving biological neurons on a Cortical Labs CL1 chip to produce real-time generative music. Live at https://spikeensemble.baileyjohnson.io
+- [havenwood](https://github.com/baileywjohnson/havenwood): Animal-sanctuary management game built with Phaser 3; sprites and sounds generated procedurally at boot. Live at https://havenwood.io
+- [balance-table](https://github.com/baileywjohnson/balance-table): Center-of-gravity block-placement balancing algorithm with an Eel-based web GUI.
+- [the-wall](https://github.com/baileywjohnson/the-wall): Single-page app demonstrating client-side routing via the History API with no framework.
+- [mpi-matrix-mult](https://github.com/baileywjohnson/mpi-matrix-mult): Parallel matrix multiplication in C + MPI, benchmarked on XSEDE's COMET cluster.
+
+## Links
+
+- [GitHub](https://github.com/baileywjohnson): Source code and more projects.
+- [LinkedIn](https://www.linkedin.com/in/baileywjohnson/): Professional profile.
+- [Email](mailto:baileywjohnson@gmail.com): Direct contact.
+
+## Optional
+
+- [Georgia Tech OMSCS](https://omscs.gatech.edu/): Current graduate ML study.
+- [Flexport](https://www.flexport.com/): Current employer.

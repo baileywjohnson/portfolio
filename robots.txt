@@ -1,0 +1,50 @@
+# robots.txt — baileyjohnson.io
+# This is a public personal portfolio. Humans and agents are welcome.
+
+User-agent: *
+Allow: /
+# Cloudflare content-signals: how this content may be used.
+# Flip ai-train to "no" if you do not want the content used for model training.
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+# AI / agent crawlers — explicitly permitted.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://baileyjohnson.io/sitemap.xml
