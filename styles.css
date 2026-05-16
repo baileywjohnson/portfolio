@@ -90,6 +90,9 @@ p { line-height: 1.5; font-size: 15px; }
 }
 .social a:hover { background-color: #fff; }
 
+/* Exposes a tablist role without adding a box to the nav's flex/grid layout. */
+.tablist { display: contents; }
+
 .nav {
   display: flex;
   flex-direction: column;

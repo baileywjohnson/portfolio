@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bailey Johnson</title>
   <meta name="description" content="Bailey Johnson — Software Engineer in Seattle, WA" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bailey Johnson" />
+  <meta property="og:description" content="Bailey Johnson — Software Engineer in Seattle, WA" />
+  <meta property="og:url" content="https://baileyjohnson.io/" />
+  <meta property="og:image" content="https://baileyjohnson.io/assets/headshot.jpg" />
+  <meta property="og:image:alt" content="Bailey Johnson" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bailey Johnson" />
+  <meta name="twitter:description" content="Bailey Johnson — Software Engineer in Seattle, WA" />
+  <meta name="twitter:image" content="https://baileyjohnson.io/assets/headshot.jpg" />
+
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -31,8 +43,10 @@
       </div>
 
       <nav class="nav">
-        <button class="nav-btn active" data-target="about">About</button>
-        <button class="nav-btn" data-target="projects">Projects</button>
+        <div class="tablist" role="tablist" aria-label="Sections">
+          <button class="nav-btn active" id="tab-about" data-target="about" role="tab" aria-controls="about" aria-selected="true" tabindex="0">About</button>
+          <button class="nav-btn" id="tab-projects" data-target="projects" role="tab" aria-controls="projects" aria-selected="false" tabindex="-1">Projects</button>
+        </div>
         <a class="nav-btn external" href="assets/resume.pdf" target="_blank" rel="noreferrer">
           Resume
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="11" height="11" fill="currentColor"><path d="M432 320h-32a16 16 0 0 0-16 16v112H64V128h112a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V336a16 16 0 0 0-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 0 0 0 34L157.67 377a24 24 0 0 0 34 0L435.28 133.32 471 169c15 15 41 4.5 41-17V24a24 24 0 0 0-24-24z"/></svg>
@@ -41,7 +55,7 @@
     </aside>
 
     <div class="content">
-      <section id="about" class="page">
+      <section id="about" class="page" role="tabpanel" aria-labelledby="tab-about">
         <h2>Hi &#128075;, I'm Bailey.</h2>
         <p>I'm a <b>software engineer</b> at <a href="https://www.flexport.com/" target="_blank" rel="noreferrer">Flexport</a>. I have experience building services and APIs that power complex applications. I like handling software integrations and really dig distributed systems.</p>
         <p>I've also spent a large portion of my career working with machine learning models. First by building the infrastructure and tooling necessary to support them, and more recently by leveraging frontier models to build powerful client-facing features. Now I literally work <b>with</b> them every day.</p>
@@ -58,7 +72,7 @@
         <p>When I'm not at my desk I enjoy live music, hiking, longboarding, playing guitar and making coffee &#9749;.</p>
       </section>
 
-      <section id="projects" class="page hidden">
+      <section id="projects" class="page hidden" role="tabpanel" aria-labelledby="tab-projects">
         <h2>Things I've Built&nbsp; &#128736;</h2>
         <p>I've had the opportunity to contribute-to and lead the development on some pretty neat projects throughout my career.</p>
         <p>Ask Me About:</p>
