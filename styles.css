@@ -50,6 +50,7 @@ p { line-height: 1.5; font-size: 15px; }
 
 .photo {
   width: 45%;
+  height: auto;
   border-radius: 50%;
   border: 5px solid var(--border);
   padding: 3px;
